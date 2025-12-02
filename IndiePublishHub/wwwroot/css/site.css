@@ -1,0 +1,382 @@
+/* Базовые стили */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #ff6584;
+  --dark-color: #2a2d3e;
+  --light-color: #f8f9fa;
+  --gray-color: #6c757d;
+  --success-color: #28a745;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Навигация */
+.navbar {
+  background-color: var(--dark-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-accent {
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--primary-color);
+}
+
+.btn-apply {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.btn-apply:hover {
+  background-color: #5a52d5;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Герой секция */
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #2a2d3e 0%, #3a3f58 100%);
+  color: white;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #b0b3c5;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #5a52d5;
+  transform: translateY(-2px);
+}
+
+.hero-video video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Особенности */
+.features {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Статистика */
+.stats {
+  background-color: var(--light-color);
+  padding: 3rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Футер */
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Страница заявки */
+.apply-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 3rem 0;
+}
+
+.apply-form h2 {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.stores-checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.timeline {
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-number {
+  background-color: var(--primary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .hero .container,
+  .apply-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stores-checkbox {
+    grid-template-columns: 1fr;
+  }
+}

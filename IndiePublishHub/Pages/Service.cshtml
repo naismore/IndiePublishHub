@@ -1,0 +1,85 @@
+﻿@page
+@model Service
+@{
+    ViewData["Title"] = "Услуги";
+}
+
+<div class="page-header">
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <p>Полный спектр услуг для инди-разработчиков</p>
+    </div>
+</div>
+
+<section class="services-section">
+    <div class="container">
+        <div class="service-tiers">
+            <div class="tier-card basic">
+                <div class="tier-header">
+                    <h3>Basic</h3>
+                    <div class="price">₽5,000<span>/месяц</span></div>
+                </div>
+                <ul class="tier-features">
+                    <li><i class="fas fa-check"></i> До 3 игр</li>
+                    <li><i class="fas fa-check"></i> 3 магазина</li>
+                    <li><i class="fas fa-times"></i> Автоконвертация</li>
+                    <li><i class="fas fa-times"></i> Приоритетная поддержка</li>
+                </ul>
+                <a href="/Apply" class="btn-tier">Выбрать</a>
+            </div>
+            
+            <div class="tier-card pro">
+                <div class="tier-badge">Популярный</div>
+                <div class="tier-header">
+                    <h3>Pro</h3>
+                    <div class="price">₽15,000<span>/месяц</span></div>
+                </div>
+                <ul class="tier-features">
+                    <li><i class="fas fa-check"></i> До 10 игр</li>
+                    <li><i class="fas fa-check"></i> Все магазины</li>
+                    <li><i class="fas fa-check"></i> Автоконвертация</li>
+                    <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+                </ul>
+                <a href="/Apply" class="btn-tier">Выбрать</a>
+            </div>
+            
+            <div class="tier-card enterprise">
+                <div class="tier-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">Индивидуально</div>
+                </div>
+                <ul class="tier-features">
+                    <li><i class="fas fa-check"></i> Неограниченно игр</li>
+                    <li><i class="fas fa-check"></i> Все магазины + кастомные</li>
+                    <li><i class="fas fa-check"></i> Полная автоматизация</li>
+                    <li><i class="fas fa-check"></i> Персональный менеджер</li>
+                </ul>
+                <a href="/Apply" class="btn-tier">Обсудить</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="integration-section">
+    <div class="container">
+        <h2 class="section-title">Интеграции с магазинами</h2>
+        <div class="integrations-grid">
+            <div class="integration-item">
+                <img src="~/images/steam-logo.png" alt="Steam">
+                <span>Steam</span>
+            </div>
+            <div class="integration-item">
+                <img src="~/images/epic-logo.png" alt="Epic Games">
+                <span>Epic Games</span>
+            </div>
+            <div class="integration-item">
+                <img src="~/images/gog-logo.png" alt="GOG">
+                <span>GOG</span>
+            </div>
+            <div class="integration-item">
+                <img src="~/images/vk-play-logo.png" alt="VK Play">
+                <span>VK Play</span>
+            </div>
+        </div>
+    </div>
+</section>

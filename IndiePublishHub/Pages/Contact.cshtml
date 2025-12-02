@@ -1,0 +1,64 @@
+﻿@page
+@model Contact
+@{
+    ViewData["Title"] = "Контакты";
+}
+
+<div class="page-header">
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <p>Свяжитесь с нами для сотрудничества</p>
+    </div>
+</div>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2><i class="fas fa-map-marker-alt"></i> Наш офис</h2>
+                <p><strong>Адрес:</strong> г. Москва, ул. Ленина, д. 1, БЦ "Технопарк"</p>
+                
+                <h2><i class="fas fa-clock"></i> Часы работы</h2>
+                <p>Пн-Пт: 9:00 - 18:00</p>
+                <p>Сб-Вс: выходной</p>
+                
+                <h2><i class="fas fa-phone"></i> Телефоны</h2>
+                <p>Техподдержка: +7 (999) 123-45-67</p>
+                <p>Сотрудничество: +7 (999) 123-45-68</p>
+                
+                <h2><i class="fas fa-envelope"></i> Email</h2>
+                <p>contact@indiepublish.ru</p>
+                <p>support@indiepublish.ru</p>
+            </div>
+            
+            <div class="contact-map">
+                <div class="map-container">
+                    <!-- Здесь можно вставить Яндекс.Карты или Google Maps -->
+                    <img src="~/images/map-placeholder.jpg" alt="Карта расположения офиса" class="map-image">
+                    <div class="map-overlay">
+                        <i class="fas fa-map-pin"></i>
+                        <p>Наш офис здесь</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Быстрый вопрос?</h3>
+                    <form id="quickContactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваш вопрос" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

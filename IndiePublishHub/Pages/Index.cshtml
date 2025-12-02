@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная - IndiePublish Hub";
+}
+
+<div class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1><span class="highlight">Публикуйте</span> инди-игры во всех магазинах <span class="highlight">одним кликом</span></h1>
+            <p class="hero-subtitle">Единая платформа для публикации в Steam, Epic Games Store, VK Play и других магазинах</p>
+            <a href="/Apply" class="btn-primary">
+                <i class="fas fa-rocket"></i> Начать публикацию
+            </a>
+        </div>
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="~/videos/demo.mp4" type="video/mp4">
+                <source src="~/videos/demo.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
+</div>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Единый кабинет</h3>
+                <p>Управляйте публикациями во всех магазинах из одного интерфейса</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Автоконвертация</h3>
+                <p>Автоматическая адаптация контента под требования каждого магазина</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Единая аналитика</h3>
+                <p>Полная статистика по продажам из всех магазинов в одном дашборде</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Инди-разработчиков</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Магазинов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">80%</div>
+                <div class="stat-label">Экономия времени</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Поддержка</div>
+            </div>
+        </div>
+    </div>
+</section>
